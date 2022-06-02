@@ -1,0 +1,17 @@
+<template>
+    <template if:true={showTable}>
+        <lightning-card  title="Accounts Information">            
+            <c-generic-lightning-datatable if:true={allRecords} records={allRecords} 
+                onsetselectedrecords={handleAllSelectedRows}
+                total-records={allRecords.length} 
+                columns = {columns}
+                key-field="Id"
+                show-search-box="true"            
+                max-row-selection={allRecords.length}
+                onpaginatorchange={handlePaginatorChange}
+                table-height="200">
+            </c-generic-lightning-datatable>     
+        </lightning-card>
+    </template>
+    <br/><br/>
+</template>
