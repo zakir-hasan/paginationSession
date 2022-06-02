@@ -1,6 +1,6 @@
 <template>
     <template if:true={showTable}>
-        <lightning-card  title="Accounts Information">            
+        <lightning-card  title="Account Information" icon-name="standard:account">            
             <c-generic-lightning-datatable if:true={allRecords} records={allRecords} 
                 onsetselectedrecords={handleAllSelectedRows}
                 total-records={allRecords.length} 
